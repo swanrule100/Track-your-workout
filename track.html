@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ysabeau+SC:wght@1..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>track your Workout</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="logo">
+          <h1>TRW</h1>
+        </div>
+
+        <div class="nav">
+          <a href="#" class="nav-link"><p>Home</p></a>
+          <a href="#workout-suggestion" class="nav-link"><p>Workout</p></a>
+          <a href="#suppliment-suggestion" class="nav-link"
+            ><p>suppliment</p></a
+          >
+          <a href="login.html" class="nav-link"><p>join</p></a>
+          <div class="social">
+            <a href="#"><i < class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars"> </i>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-body">
+      <div class="track-body">
+        <div class="track-body-heading">
+          <h1>Track your workout</h1>
+        </div>
+
+        <form action="" method="post">
+          <div class="main_exercise">
+            <h3>select your Exercise</h3>
+            <select class="exer">
+              <option class="Exercise" value="">
+                -- Select an Exercise --
+              </option>
+              <!-- Push Exercises -->
+              <option value="bench_press">Bench Press</option>
+              <option value="incline_bench_press">Incline Bench Press</option>
+              <option value="shoulder_press">Shoulder Press</option>
+              <option value="push_ups">Push-Ups</option>
+              <option value="chest_dips">Chest Dips</option>
+
+              <!-- Pull Exercises -->
+              <option value="pull_ups">Pull-Ups</option>
+              <option value="chin_ups">Chin-Ups</option>
+              <option value="barbell_row">Barbell Row</option>
+              <option value="dumbbell_row">Dumbbell Row</option>
+              <option value="lat_pulldown">Lat Pulldown</option>
+
+              <!-- Leg Exercises -->
+              <option value="squats">Squats</option>
+              <option value="leg_press">Leg Press</option>
+              <option value="deadlifts">Deadlifts</option>
+              <option value="lunges">Lunges</option>
+              <option value="calf_raises">Calf Raises</option>
+
+              <!-- Arm Exercises -->
+              <option value="bicep_curls">Bicep Curls</option>
+              <option value="hammer_curls">Hammer Curls</option>
+              <option value="tricep_dips">Tricep Dips</option>
+              <option value="tricep_pushdown">Tricep Pushdown</option>
+
+              <!-- Core Exercises -->
+              <option value="plank">Plank</option>
+              <option value="sit_ups">Sit-Ups</option>
+              <option value="russian_twist">Russian Twist</option>
+              <option value="hanging_leg_raises">Hanging Leg Raises</option>
+              <option value="mountain_climbers">Mountain Climbers</option>
+
+              <!-- Cardio Exercises -->
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+              <option value="jumping_rope">Jumping Rope</option>
+              <option value="rowing_machine">Rowing Machine</option>
+              <option value="stair_climber">Stair Climber</option>
+            </select>
+          </div>
+
+          <div class="main_exercise">
+            <h3>Enter Total Sets:</h3>
+            <input
+              type="number"
+              id="sets"
+              name="sets"
+              min="1"
+              placeholder="e.g., 3"
+            />
+          </div>
+
+          <div class="main_exercise">
+            <h3>Enter Reps per Set:</h3>
+            <input
+              type="number"
+              id="reps"
+              name="reps"
+              min="1"
+              placeholder="e.g., 10"
+            />
+          </div>
+
+          <div class="btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
